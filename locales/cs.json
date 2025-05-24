@@ -26,7 +26,7 @@
   "ui_removed": "Odstraněno",
   "ui_added": "Přidáno",
   "ui_holstered": "Zandáno",
-  "ui_equipped": "Vybaveno",
+  "ui_equipped": "Vyndáno",
   "using": "Používáš %s",
   "inventory_setup": "Inventář je připraven k použití",
   "inventory_player_access": "V tento moment nelze otevřít inventář",
@@ -89,5 +89,5 @@
   "crafting_bench": "Pracovní stůl",
   "open_crafting_bench": "Otevřít pracovní stůl",
   "not_enough_durability": "%s je příliš poškozený",
-  "storage": "Úložný prostor"
+  "storage": "Kufr"
 }
