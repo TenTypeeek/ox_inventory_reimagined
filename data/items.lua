@@ -40,7 +40,7 @@ return {
 		label = 'Sprunk',
 		weight = 355,
 		client = {
-			label = 'You are drinking sprunk',
+			label = 'You are drinking Sprunk',
 			status = { thirst = 200000 },
 			anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
 			prop = { model = `prop_ld_can_01`, pos = vec3(0.01, 0.01, 0.06), rot = vec3(5.0, 5.0, -180.5) },
@@ -71,12 +71,6 @@ return {
 			disable = { move = true, car = true, combat = true },
 			usetime = 2500,
 		}
-	},
-
-	-- CONSUMABLES (MISC)
-	['panties'] = {
-		label = 'Panties',
-		weight = 50,
 	},
 
 	-- UTILITY ITEMS
@@ -111,6 +105,7 @@ return {
 		stack = false,
 		consume = 0,
 		client = {
+			image = 'iphone.png'  -- andoid.png
 			add = function(total)
 				if total > 0 then
 					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
@@ -137,6 +132,11 @@ return {
 		weight = 5,
 	},
 
+	['Driverlicense'] = {
+		label = 'Driver License',
+		weight = 5,
+	},
+
 	['fleecacard'] = {
 		label = 'Fleeca Card',
 		stack = false,
@@ -145,12 +145,12 @@ return {
 
 	-- VALUABLES & CURRENCY
 	['money'] = {
-		label = 'Money',
+		label = 'Dollar',
 		weight = 1,
 	},
 
 	['black_money'] = {
-		label = 'Dirty Money',
+		label = 'Roll Of Dollars',
 		weight = 1,
 	},
 
@@ -158,6 +158,11 @@ return {
 	['garbage'] = {
 		label = 'Garbage',
 		weight = 300,
+	},
+
+	['panties'] = {
+		label = 'Panties',
+		weight = 50,
 	},
 
 	['scrapmetal'] = {
