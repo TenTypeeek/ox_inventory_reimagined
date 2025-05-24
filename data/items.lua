@@ -1,8 +1,22 @@
 return {
 	-- FOOD & DRINK
+    ['sandwich'] = {
+        label = 'Sandwich',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating a sandwich',
+            status = { thirst = 60000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_sandwich_01', pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+            usetime = 7500,
+        },
+    },
+
 	['burger'] = {
 		label = 'Burger',
-		weight = 250, -- typical fast food burger
+		weight = 250,
 		client = {
 			label = 'You are eating a burger',
 			status = { hunger = 200000 },
@@ -48,6 +62,20 @@ return {
 		}
 	},
 
+	    ['cola'] = {
+        label = 'eCola',
+        weight = 350,
+        stack = true,
+        close = true,
+        description = "Carbonized syrup is good for the soul",
+        client = {
+            status = { thirst = 20000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_ecola_can', pos = vec3(0.025, 0.010, 0.05), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 7500,
+        },
+    },
+
 	['water'] = {
 		label = 'Water',
 		weight = 500,
@@ -60,6 +88,62 @@ return {
 			cancel = true,
 		}
 	},
+
+	['rancho_beer'] = {
+        label = 'Cerbesa Barracho',
+        weight = 580,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking Cerbesa Barracho',
+            status = { drunk = 60000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_beer_bottle', pos = vec3(0.02, -0.01, -0.14), rot = vec3(1.0, 5.0, -182.5) },
+            usetime = 7500,
+        },
+    },
+
+    ['dusche_beer'] = {
+        label = 'Dusche Beer',
+        weight = 580,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking Dusche beer',
+            status = { drunk = 60000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_beerdusche', pos = vec3(0.01, -0.01, -0.12), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 7500,
+        },
+    },
+
+    ['stronzo_beer'] = {
+        label = 'Stronzo Beer',
+        weight = 580,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking Stronzo beer',
+            status = { drunk = 60000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_beer_stz', pos = vec3(0.01, -0.02, -0.15), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 7500,
+        },
+    },
+
+    ['patriot_beer'] = {
+        label = 'Patriot Beer',
+        weight = 580,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking Patriot beer',
+            status = { drunk = 60000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_beer_patriot', pos = vec3(0.01, -0.02, -0.15), rot = vec3(5.0, 5.0, -180.5) },
+            usetime = 7500,
+        },
+    },
 
 	-- MEDICAL
 	['bandage'] = {
@@ -106,16 +190,6 @@ return {
 		consume = 0,
 		client = {
 			image = 'iphone.png'  -- andoid.png
-			add = function(total)
-				if total > 0 then
-					pcall(function() return exports.npwd:setPhoneDisabled(false) end)
-				end
-			end,
-			remove = function(total)
-				if total < 1 then
-					pcall(function() return exports.npwd:setPhoneDisabled(true) end)
-				end
-			end
 		}
 	},
 
@@ -169,6 +243,36 @@ return {
 		label = 'Scrap Metal',
 		weight = 250,
 	},
+
+	['bodyarmor_1'] = {
+        label = 'Light Ballistic Vest',
+        weight = 3000,
+        stack = false,
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
+
+    ['bodyarmor_2'] = {
+        label = 'Medium Ballistic Vest',
+        weight = 4500,
+        stack = false,
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
+
+    ['bodyarmor_3'] = {
+        label = 'Heavy Ballistic Vest',
+        weight = 4500,
+        stack = false,
+        client = {
+            anim = { dict = 'clothingshirt', clip = 'try_shirt_positive_d' },
+            usetime = 6500
+        }
+    },
 
 	-- ADDON STUFF HERE
 }

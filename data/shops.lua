@@ -6,6 +6,7 @@ return {
 		}, inventory = {
 			{ name = 'burger', price = 10 },
 			{ name = 'water', price = 10 },
+			{ name = 'cola', price = 10 },
 		}, locations = {
 			vec3(25.7, -1347.3, 29.49),
 			vec3(-3038.71, 585.9, 7.9),
@@ -88,6 +89,7 @@ return {
 		}, inventory = {
 			{ name = 'water', price = 10 },
 			{ name = 'burger', price = 15 },
+			{ name = 'cola', price = 10 },
 		}, locations = {
 			vec3(1135.808, -982.281, 46.415),
 			vec3(-1222.915, -906.983, 12.326),
@@ -217,6 +219,7 @@ return {
 		name = 'Vending Machine',
 		inventory = {
 			{ name = 'water', price = 10 },
+			{ name = 'cola', price = 10 },
 		},
 		model = {
 			`prop_vend_soda_02`, `prop_vend_fridge01`, `prop_vend_water_01`, `prop_vend_soda_01`

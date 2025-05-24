@@ -99,7 +99,29 @@ Item('bandage', function(data, slot)
 	end)
 end)
 
-Item('armour', function(data, slot)
+Item('bodyarmor_1', function(data, slot) -- Adds 30% of body armor
+	if GetPedArmour(cache.ped) < 100 then
+		ox_inventory:useItem(data, function(data)
+			if data then
+				SetPlayerMaxArmour(PlayerData.id, 100)
+				SetPedArmour(cache.ped, 30)
+			end
+		end)
+	end
+end)
+
+Item('bodyarmor_2', function(data, slot) -- Adds 60% of body armor
+	if GetPedArmour(cache.ped) < 100 then
+		ox_inventory:useItem(data, function(data)
+			if data then
+				SetPlayerMaxArmour(PlayerData.id, 100)
+				SetPedArmour(cache.ped, 60)
+			end
+		end)
+	end
+end)
+
+Item('bodyarmor_3', function(data, slot) -- Adds 100% of body armor
 	if GetPedArmour(cache.ped) < 100 then
 		ox_inventory:useItem(data, function(data)
 			if data then
