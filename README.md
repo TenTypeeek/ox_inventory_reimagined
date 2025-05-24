@@ -2,11 +2,6 @@
 
 A modern rework of the original ox_inventory — focused on precision, polish, and maintainability. OX_Inventory Reimagined redefines the FiveM inventory experience with cleaner structure, enhanced customization, and obsessively organized data files.
 
-![](https://img.shields.io/github/downloads/yourname/OX_Inventory_Reimagined/total?logo=github)
-![](https://img.shields.io/github/downloads/yourname/OX_Inventory_Reimagined/latest/total?logo=github)
-![](https://img.shields.io/github/contributors/yourname/OX_Inventory_Reimagined?logo=github)
-![](https://img.shields.io/github/v/release/yourname/OX_Inventory_Reimagined?logo=github)
-
 ## 📚 Documentation
 
 [https://tentypeeek.gitbook.io/undv/script/ox_invetory-reimagined](https://tentypeeek.gitbook.io/undv/script/ox_invetory-reimagined)
