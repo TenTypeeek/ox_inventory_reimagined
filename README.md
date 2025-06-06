@@ -8,7 +8,7 @@ A modern rework of the original ox_inventory — focused on precision, polish, a
 
 ## 💾 Download
 
-[Download Latest Release](https://github.com/yourname/OX_Inventory_Reimagined/releases/latest/download/OX_Inventory_Reimagined.zip)
+[Download Latest Release](https://github.com/TenTypeeek/ox_inventory_reimagined/releases/tag/items)
 
 ## Supported Frameworks
 
