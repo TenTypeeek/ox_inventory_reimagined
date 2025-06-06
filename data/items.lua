@@ -1,5 +1,7 @@
 return {
+
 	-- FOOD & DRINK
+
     ['sandwich'] = {
         label = 'Sandwich',
         weight = 350,
@@ -25,6 +27,152 @@ return {
 			usetime = 2500,
 		}
 	},
+
+	    ['burger_chs'] = { 
+        label = 'Cheese Burger',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating a cheese burger',
+            status = { hunger = 230000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_cs_burger_01', 
+            pos = vec3(0.05, -0.02, -0.03), rot = vec3(150.0, 340.0, 170.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['hotdog'] = { 
+        label = 'Hotdog',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating a hotdog',
+            status = { hunger = 230000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'prop_cs_hotdog_01', 
+            pos = vec3(0.06, -0.01, -0.03), rot = vec3(60.0, -90.0, 0.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['noodles'] = { 
+        label = 'Thai Noodles',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating Thai Noodles',
+            status = { hunger = 160000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'v_ret_fh_noodle', 
+            pos = vec3(-0.03, 0.01, 0.05), 
+            rot = vec3(0.0, 0.0, -40.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['fr_fries'] = {
+        label = 'French Fries',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating French Fries',
+            status = { hunger = 120000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'prop_food_chips', 
+            pos = vec3(-0.01, 0.0, -0.02), rot = vec3(0.0, 0.0, -45.0) },
+            usetime = 5000,
+        },
+    },
+
+	    ['pizza_pep'] = {
+        label = 'Peperoni Pizza',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating peperoni pizza',
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'knjgh_pizzaslice5', 
+            pos = vec3(0.0500, -0.0300, -0.0700), 
+            rot = vec3(300.0, -10.0, 160.0),
+            bone = 60309 },
+            usetime = 7500,
+        },
+    },
+
+    ['pizza_chs'] = {
+        label = 'Cheese Pizza',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating cheese pizza',
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'knjgh_pizzaslice4', 
+            pos = vec3(0.0500, -0.0300, -0.0700), 
+            rot = vec3(300.0, -10.0, 160.0),
+            bone = 60309 },
+            usetime = 7500,
+        },
+    },
+
+    ['pizza_msh'] = {
+        label = 'Mushroom Pizza',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating mushroom pizza',
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'knjgh_pizzaslice3', 
+            pos = vec3(0.0500, -0.0300, -0.0700), 
+            rot = vec3(300.0, -10.0, 160.0),
+            bone = 60309 },
+            usetime = 7500,
+        },
+    },
+
+    ['pizza_mgt'] = {
+        label = 'Margherita Pizza',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating margherita pizza',
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'knjgh_pizzaslice2', 
+            pos = vec3(0.0500, -0.0300, -0.0700), 
+            rot = vec3(300.0, -10.0, 160.0),
+            bone = 60309 },
+            usetime = 7500,
+        },
+    },
+
+    ['pizza_dmt'] = {
+        label = 'Double Meat Pizza',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are eating double meat pizza',
+            status = { hunger = 200000 },
+            anim = { dict = 'mp_player_inteat@burger', clip = 'mp_player_int_eat_burger_fp' },
+            prop = { model = 'knjgh_pizzaslice1', 
+            pos = vec3(0.0500, -0.0300, -0.0700), 
+            rot = vec3(300.0, -10.0, 160.0),
+            bone = 60309 },
+            usetime = 7500,
+        },
+    },
 
 	['mustard'] = {
 		label = 'Mustard',
@@ -62,12 +210,11 @@ return {
 		}
 	},
 
-	    ['cola'] = {
+	['cola'] = {
         label = 'eCola',
         weight = 350,
         stack = true,
         close = true,
-        description = "Carbonized syrup is good for the soul",
         client = {
             status = { thirst = 20000 },
             anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
@@ -145,7 +292,68 @@ return {
         },
     },
 
+	    ['coffee_black'] = {
+        label = 'Black Coffee',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking black coffee',
+            status = { thirst = 220000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'ng_proc_coffee_01a', 
+            pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['coffee_mocha'] = {
+        label = 'Mocha',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking mocha',
+            status = { thirst = 220000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'ng_proc_coffee_01a', 
+            pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['coffee_cpcno'] = {
+        label = 'Cappuccino',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking cappuccino',
+            status = { thirst = 220000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'ng_proc_coffee_01a', 
+            pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+            usetime = 7500,
+        },
+    },
+
+    ['coffee_amrcno'] = {
+        label = 'Americano',
+        weight = 350,
+        stack = true,
+        close = true,
+        client = {
+			label = 'You are drinking americano',
+            status = { thirst = 220000 },
+            anim = { dict = 'mp_player_intdrink', clip = 'loop_bottle' },
+            prop = { model = 'ng_proc_coffee_01a', 
+            pos = vec3(0.008, 0.0, -0.05), rot = vec3(0.0, 0.0, -40.0) },
+            usetime = 7500,
+        },
+    },
+
 	-- MEDICAL
+
 	['bandage'] = {
 		label = 'Bandage',
 		weight = 100,
@@ -189,7 +397,7 @@ return {
 		stack = false,
 		consume = 0,
 		client = {
-			image = 'iphone.png'  -- andoid.png
+			image = 'iphone.png'		-- andoid.png / iphone.png
 		}
 	},
 
@@ -201,6 +409,7 @@ return {
 	},
 
 	-- DOCUMENTS & CARDS
+
 	['identification'] = {
 		label = 'ID Card',
 		weight = 5,
@@ -218,6 +427,7 @@ return {
 	},
 
 	-- VALUABLES & CURRENCY
+
 	['money'] = {
 		label = 'Dollar',
 		weight = 1,
@@ -229,6 +439,7 @@ return {
 	},
 
 	-- JUNK / MISCELLANEOUS
+
 	['garbage'] = {
 		label = 'Garbage',
 		weight = 300,

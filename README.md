@@ -1,4 +1,4 @@
-# OX_Inventory Reimagined
+# [WIP] OX_Inventory Reimagined
 
 A modern rework of the original ox_inventory — focused on precision, polish, and maintainability. OX_Inventory Reimagined redefines the FiveM inventory experience with cleaner structure, enhanced customization, and obsessively organized data files.
 
@@ -19,7 +19,7 @@ Designed for flexibility. Works out-of-the-box with major frameworks:
 - [qbox](https://github.com/Qbox-project/qbx_core)
 - [nd_core](https://github.com/ND-Framework/ND_Core)
 
--# We do not guarantee compatibility or support for third-party resources.
+We do not guarantee compatibility or support for third-party resources.
 
 ## ✨ Key Improvements
 
@@ -51,6 +51,11 @@ Designed for flexibility. Works out-of-the-box with major frameworks:
 ## 🔍 Why Reimagined?
 
 We cleaned up OX_Inventory by removing outdated images and replacing them with more realistic ones. We also set custom progress bar texts and enhanced the overall experience to make it more immersive and in-depth.
+
+## 🔁 Used Resources
+
+- [Images](https://github.com/bitc0de/fivem-items-gallery/tree/main)
+- [More Items](https://github.com/davefl67/mi_ox_items_template)
 
 ## Copyright
 
