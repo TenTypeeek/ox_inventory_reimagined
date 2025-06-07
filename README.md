@@ -54,7 +54,7 @@ We cleaned up OX_Inventory by removing outdated images and replacing them with m
 
 ## 🔁 Used Resources
 
-- [Images](https://github.com/bitc0de/fivem-items-gallery/tree/main)
+- [Some Pictures](https://github.com/bitc0de/fivem-items-gallery/tree/main)
 - [More Items](https://github.com/davefl67/mi_ox_items_template)
 
 ## Copyright
