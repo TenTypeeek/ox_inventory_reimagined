@@ -1,3 +1,5 @@
+https://i.imgur.com/EW4sUjy.png
+
 # [WIP] OX_Inventory Reimagined
 
 A modern rework of the original ox_inventory — focused on precision, polish, and maintainability. OX_Inventory Reimagined redefines the FiveM inventory experience with cleaner structure, enhanced customization, and obsessively organized data files.
