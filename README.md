@@ -1,4 +1,4 @@
-![Banner](https://i.imgur.com/g1Ba4hm.png)
+![Banner](https://i.imgur.com/nw0s5d7.png)
 
 # [WIP] OX_Inventory Reimagined
 
